@@ -1,0 +1,23 @@
+{
+	"name" : "Not bank hacking plugin",
+	"description" : "school exercise",
+	"version" : "0.3",
+	"manifest_version": 2,
+	
+	"browser_action" : {
+		"default_popup" : "popup.html",
+		"default_icon" : "icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://localhost/bank/*"],
+			"js": ["jquery-3.1.1.min.js", "script.js"],
+			"run_at": "document_end"
+		}
+	],
+	
+	"permissions": [
+		"activeTab",
+		"webRequest"
+	]
+}
