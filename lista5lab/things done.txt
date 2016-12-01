@@ -1,0 +1,6 @@
+wygenerowane CA
+wygenerowane klucze, certyfikaty
+zmiany w hosts
+zmiany w httpd-ssl.conf w apache'u
+pobrana strona poczty
+ma³e edycje
