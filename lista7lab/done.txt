@@ -1,0 +1,18 @@
+Lista zrobionych rzeczy:
+-logowanie przez google
+https://developers.google.com/identity/sign-in/web/sign-in
+-logowanie przez facebook'a
+https://developers.facebook.com/docs/facebook-login/web
+-plusy, minusy w/w logowań
+https://www.quora.com/What-are-the-pros-and-cons-of-having-users-sign-up-via-Facebook-or-Twitter-compared-to-just-registering-with-their-email-account
+-dodanie reCAPTCHA
+https://www.google.com/recaptcha/admin
+-dodanie odzyskiwania hasła zgodnie z linkiem
+https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet
+w tym
+| strona odzyskiwania z podaniem loginu
+| podanie loginu
+| podanie odpowiedzi na pytanie kontrolne (pytanie i odp podawane przy rejestracji)
+| przesłanie tokenu smsem (ustawiona bramka sms z pomocą aplikacji pushbullet)
+| reset hasla
+| przekierowanie na strone startowa
